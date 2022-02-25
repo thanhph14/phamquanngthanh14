@@ -1,0 +1,473 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+ };
+/* css for header */
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    
+}
+.header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+.logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.nav{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.main-menu{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+#active{
+    color:rgb(102, 102, 202);
+    text-shadow: 1px 1px hsl(258, 42%, 44%);
+}
+ .main-menu .sub-menu{
+    display: none; 
+} 
+/* cach khac */
+/* .sub-menu{
+    display: none;
+} */
+.main-menu>li{     /*li la con truc tiep*/
+    width: fit-content;
+    margin-right: 10px;
+    padding: 5px;
+    position: relative;
+}
+.main-menu>li>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #020516;
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    width: max-content;
+}
+.sub-menu li{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.sub-menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+}
+/* css for img */
+#img{
+    width: 99%;
+    height: 600px;
+    box-shadow: 0 -5px 4px 0px gray;
+}
+.img-frame{
+    width: 100%;
+    height: 100%;
+}
+.img-frame img{
+    width: 100%;
+    height: 100%;
+}
+
+/* css for intro */
+#intro{
+    display: flex;
+    justify-content: center;
+    height: 530px;
+}
+.intro-frame{
+    width: 1200px;
+    height: calc(100%-15px);
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    margin-top: 100px;
+}
+.intro-frame img{
+    width: 450px;
+    height: 380px;
+    max-width: 100%;
+    margin-right: 50px;
+}
+.intro-frame .para{
+    width: 670px;
+    height: 400px;
+    padding-top:25px 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+}
+.intro-frame .para p{
+    margin: 0 0 20px 0;
+}
+
+/* css for content */
+#content{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+.content-frame h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 35px;
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+.content-box{
+    height: 370px;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 30%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col-sm-2{
+    border:2px solid rgb(83, 83, 172);
+    margin: 0 20px 0 20px;
+}
+.card{
+    border: none;
+}
+.box-icon {
+    text-align: center;
+    height: 50px;
+}
+.col-sm-2{
+    width: 305px;
+    height: 240px;
+    border-radius: 10px;
+}
+.card-body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.box-icon i{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(26, 26, 148, 0.842);
+}
+h5{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.card-body p{
+    text-align: center;
+    margin-top: 10px;
+}
+/* css for witget */
+#widget{
+    background-image: linear-gradient(0, purple, rgb(52, 52, 190));
+}
+
+.widget-wrap{
+    /* display: grid; */
+}
+.widget-wrap .title{
+    color: #f4f4f4;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+.slidew{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.slidew .imgs{
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin:0 20px 0 0 ;
+}
+.slidew .imgs:last-child{
+    margin-right: 0px;
+}
+.slidew .imgs img{
+    height: 190px;
+    width: 280px;
+    margin: 5px ;
+}
+.slidew .imgs h3{
+    font-size: 15px;
+}
+ .widget-wrap .content-wrap{
+    display: flex;
+    justify-content: center;
+} 
+.widget-wrap .content-wrap p{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+.widget-wrap .content-wrap .content{
+    width: 80%;
+    height: 100%;
+}
+/* css for button */
+.widget-wrap .button-wrap{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.widget-wrap .button{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #f4f4f4;
+    text-align: center;
+    border: 3px solid white;
+    padding: 2px 3px 0 3px;
+}
+.bottom p{
+    margin-bottom: 0;
+}
+/* css for intro2 */
+#intro2 .intro-widget{
+    display: flex;
+    justify-content: center;
+}
+.main-intro .intro-inner{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.intro-widget .intro-imgs{
+    width: 25%;
+    border: 3px solid #e1e0e0;
+    margin: 16px;
+}
+.intro-imgs img{
+    width: 100%;
+    padding: 16px;
+}
+.intro-imgs p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+/* css for infor */
+#infor{
+    display: grid;
+}
+.infor-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0, rgb(63, 63, 240),rgb(21, 21, 139));
+    color: #e1e0e0;
+    text-align: center;
+}   
+.infor-form{
+    width: 40%;
+    height: 80%;
+    margin-top: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.infor-main{
+    width: 40%;
+    height: 80%;
+    margin-top: 50px;
+}
+/* css for form in infor */
+#infor{
+    padding-top: 50px;
+    height: 615px;
+}
+.infor-form .title h2{
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.infor-form .title h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.form-control{
+    margin: 20px;
+    margin-left: 0;
+}
+/* .button-form{
+    color: #020516;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background-color: orange;
+} */
+button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: orange;
+    border-radius: 5px ;
+    border: 0;
+}
+button:hover{
+    background-color:orange;
+    color: white;
+}
+.infor-main ul li i{
+    color: yellow;
+}
+.infor-main ul {
+    padding-top: 20px;
+    margin: 0;
+}
+.infor-main ul li{
+    padding: 6px;
+}
+.infor-main .inf-time{
+    margin-left: 20px;
+}
+/* css for intro3 */
+#intro3{
+    display: flex;
+    justify-content: center;
+    background-color: #e9e9e9;
+    height: 650px;
+}
+.intro3-wrap{
+    height: 567px;
+    width: 1100px;
+}
+.intro3-wrap .intro3-title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 50px 0;
+}
+
+.intro3-title h4{
+    font-weight: 650;
+    font-size: 25px;
+}
+.intro3-wrap .intro3-content{
+    display: flex;
+}
+.intro3-wrap .intro3-img{
+    padding-right: 50px;
+}
+.intro3-wrap .intro3-img img{
+    width: 450px;
+    height: 450px;
+}
+.intro3-content .intro3-content-main{
+    font-size: 20px;
+}
+.intro3-content .intro3-content-main a{
+    text-decoration: none;
+    color: #020516;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* css for slider */
+.slider{
+    padding-top: 100px;
+}
+.slider .slide-main{
+    padding-bottom: 50px;
+}
+.slider-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.slider-title h3{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#carouselExampleControls .carousel-inner{
+    height: 300px;
+}
+.carousel-inner{
+    padding-top: 70px;
+    display: grid;
+    justify-content: center;
+}
+.carousel-inner img{
+    height: 100px;
+}
+.carousel-control-prev{
+    background-color: whitesmoke;
+}
+.carousel-control-next{
+    background-color: whitesmoke;
+}
+#carouselExampleControls button{
+    background-color: whitesmoke;
+}
+/* css for footer */
+#footer{
+    height: 500px;
+    background-color: rgb(48, 48, 170);
+}
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding-top: 70px;
+}
+.footer-wrap h2{
+    font-size: 26px;
+}
+.footer-wrap .footer-inf{
+    width: 25%;
+    padding-right: 50px;
+}
+.footer-wrap .footer-contact{
+    width: 25%;
+}
+.footer-wrap .footer-form{
+    width: 25%;
+    padding-left: 50px;
+}
+.footer-wrap a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-wrap ul{
+    padding-left: 0;
+}
+.footer-wrap .footer-inf ul i{
+    padding:0 5px 0 5px;
+}
